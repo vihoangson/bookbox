@@ -1,0 +1,34 @@
+div#wpbooklist-filter-search-container {
+    display: none;
+}
+
+.book-body .list-book > li {
+    float: left;
+    background: white;
+    list-style: none;
+    height: 283px;
+    width: 30%;
+    margin: 0 10px;
+    padding: 10px;
+}
+.post-meta  {
+    margin-left: 0px;
+}
+.post-meta li {
+    font-size: 10px;
+    list-style: none;
+}
+
+.thumbnail-book {
+    height: 180px;
+    text-align: center;
+}
+
+.thumbnail-book img {
+    max-height: 170px;
+    max-width: 170px;
+}
+
+header.entry-header {
+    padding-top: 25px;
+}
