@@ -40,3 +40,14 @@ header.entry-header {
 
 main#main {
 }
+
+span.byline {
+    display: block;
+}
+
+footer.entry-footer {
+}
+
+time.updated {
+    display: none;
+}

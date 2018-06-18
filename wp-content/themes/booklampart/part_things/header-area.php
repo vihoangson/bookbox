@@ -77,9 +77,9 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <ul class="pull-right dropdown-menu">
-                            <li><a tabindex="-1" href="#">Pound </a></li>
-                            <li><a tabindex="-1" href="#">US Dollar</a></li>
-                            <li><a tabindex="-1" href="#">Euro</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">Pound </a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">US Dollar</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">Euro</a></li>
                         </ul>
                     </div>
                     <!-- Currency Ends -->
@@ -91,10 +91,10 @@
                         </button>
                         <ul class="pull-right dropdown-menu">
                             <li>
-                                <a tabindex="-1" href="#">English</a>
+                                <a tabindex="-1" href="<?= get_template_new_directory(); ?>#">English</a>
                             </li>
                             <li>
-                                <a tabindex="-1" href="#">French</a>
+                                <a tabindex="-1" href="<?= get_template_new_directory(); ?>#">French</a>
                             </li>
                         </ul>
                     </div>
@@ -113,7 +113,7 @@
                 <!-- Logo Starts -->
                 <div class="col-md-6">
                     <div id="logo">
-                        <a href="/"><img src="<?= get_template_new_directory() ?>images/logo.png" title="Spice Shoppe" alt="Spice Shoppe" class="img-responsive" /></a>
+                        <a href="/"><img src="= get_template_new_directory() ?>images/logo.png" title="Spice Shoppe" alt="Spice Shoppe" class="img-responsive" /></a>
                     </div>
                 </div>
                 <!-- Logo Starts -->
@@ -146,7 +146,7 @@
                                     <tr>
                                         <td class="text-center">
                                             <a href="product.html">
-                                                <img src="<?= get_template_new_directory() ?>images/product-images/hcart-thumb1.jpg" alt="image" title="image" class="img-thumbnail img-responsive" />
+                                                <img src="= get_template_new_directory() ?>images/product-images/hcart-thumb1.jpg" alt="image" title="image" class="img-thumbnail img-responsive" />
                                             </a>
                                         </td>
                                         <td class="text-left">
@@ -165,7 +165,7 @@
                                     <tr>
                                         <td class="text-center">
                                             <a href="product.html">
-                                                <img src="<?= get_template_new_directory() ?>images/product-images/hcart-thumb2.jpg" alt="image" title="image" class="img-thumbnail img-responsive" />
+                                                <img src="= get_template_new_directory() ?>images/product-images/hcart-thumb2.jpg" alt="image" title="image" class="img-thumbnail img-responsive" />
                                             </a>
                                         </td>
                                         <td class="text-left">
@@ -239,9 +239,9 @@
                             Chili Powder
                         </a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a tabindex="-1" href="#">Red Chilly</a></li>
-                            <li><a tabindex="-1" href="#">Green Chilly</a></li>
-                            <li><a tabindex="-1" href="#">Italian Chilly</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">Red Chilly</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">Green Chilly</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">Italian Chilly</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -250,21 +250,21 @@
                             <div class="dropdown-inner">
                                 <ul class="list-unstyled">
                                     <li class="dropdown-header">Sub Category</li>
-                                    <li><a tabindex="-1" href="#">item 1</a></li>
-                                    <li><a tabindex="-1" href="#">item 2</a></li>
-                                    <li><a tabindex="-1" href="#">item 3</a></li>
+                                    <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">item 1</a></li>
+                                    <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">item 2</a></li>
+                                    <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">item 3</a></li>
                                 </ul>
                                 <ul class="list-unstyled">
                                     <li class="dropdown-header">Sub Category</li>
-                                    <li><a tabindex="-1" href="#">item 1</a></li>
-                                    <li><a tabindex="-1" href="#">item 2</a></li>
-                                    <li><a tabindex="-1" href="#">item 3</a></li>
+                                    <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">item 1</a></li>
+                                    <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">item 2</a></li>
+                                    <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">item 3</a></li>
                                 </ul>
                                 <ul class="list-unstyled">
                                     <li class="dropdown-header">Sub Category</li>
-                                    <li><a tabindex="-1" href="#">item 1</a></li>
-                                    <li><a tabindex="-1" href="#">item 2</a></li>
-                                    <li><a tabindex="-1" href="#">item 3</a></li>
+                                    <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">item 1</a></li>
+                                    <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">item 2</a></li>
+                                    <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>#">item 3</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -278,19 +278,19 @@
                             Pages
                         </a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a tabindex="-1" href="/">Home</a></li>
-                            <li><a tabindex="-1" href="about.html">About</a></li>
-                            <li><a tabindex="-1" href="category-list.html">Category List</a></li>
-                            <li><a tabindex="-1" href="category-grid.html">Category Grid</a></li>
-                            <li><a tabindex="-1" href="product.html">Product</a></li>
-                            <li><a tabindex="-1" href="product-full.html">Product Full Width</a></li>
-                            <li><a tabindex="-1" href="cart.html">Cart</a></li>
-                            <li><a tabindex="-1" href="login.html">Login</a></li>
-                            <li><a tabindex="-1" href="compare.html">Compare Products</a></li>
-                            <li><a tabindex="-1" href="typography.html">Typography</a></li>
-                            <li><a tabindex="-1" href="register.html">Register</a></li>
-                            <li><a tabindex="-1" href="contact.html">Contact</a></li>
-                            <li><a tabindex="-1" href="404.html">404</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>/">1Home</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>about.html">About</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>category-list.html">Category List</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>category-grid.html">Category Grid</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>product.html">Product</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>product-full.html">Product Full Width</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>cart.html">Cart</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>login.html">Login</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>compare.html">Compare Products</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>typography.html">Typography</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>register.html">Register</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>contact.html">Contact</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>404.html">404</a></li>
                         </ul>
                     </li>
                 </ul>

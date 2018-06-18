@@ -1,85 +1,21 @@
-<?php
-/**
- * The default template for displaying content
- *
- * Used for both single and index/archive/search.
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
-?>
-
 <!-- Main Container Starts -->
-<div id="main-container" class="">
+<div id="main-container" class="container">
     <div class="row">
         <!-- Primary Content Starts -->
         <div class="col-md-9">
             <!-- Breadcrumb Starts -->
             <ol class="breadcrumb">
-                <li><a href="/">Trang chủ</a></li>
-                <li><a href="">Sách</a></li>
-                <li class="active"><?php the_title(); ?></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active">About Us</li>
             </ol>
             <!-- Breadcrumb Ends -->
             <!-- About Content Starts -->
             <div class="page-box">
-                <div class="">
-
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <header class="entry-header">
-                            <?php
-                            if ( is_single() ) :
-                                the_title( '<h1 class="entry-title">', '</h1>' );
-                            else :
-                                the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-                            endif;
-                            ?>
-                        </header><!-- .entry-header -->
-                        <div class="text-center">
-                            <?php
-                            // Post thumbnail.
-                            twentyfifteen_post_thumbnail();
-                            ?>
-                        </div>
-                        <br>
-                        <div class="entry-content">
-                            <?php
-                            /* translators: %s: Name of current post */
-                            the_content( sprintf(
-                                __( 'Continue reading %s', 'twentyfifteen' ),
-                                the_title( '<span class="screen-reader-text">', '</span>', false )
-                            ) );
-
-                            wp_link_pages( array(
-                                'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
-                                'after'       => '</div>',
-                                'link_before' => '<span>',
-                                'link_after'  => '</span>',
-                                'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
-                                'separator'   => '<span class="screen-reader-text">, </span>',
-                            ) );
-                            ?>
-                        </div><!-- .entry-content -->
-
-                        <?php
-                        // Author bio.
-                        if ( is_single() && get_the_author_meta( 'description' ) ) :
-                            get_template_part( 'author-bio' );
-                        endif;
-                        ?>
-
-                        <footer class="entry-footer">
-                            <?php twentyfifteen_entry_meta(); ?>
-                            <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
-                        </footer><!-- .entry-footer -->
-                        <?php //get_template_part('book'); ?>
-                    </article><!-- #post-## -->
-
-                    <div class="col-sm-4 hidden">
-                        <img src="<?php get_template_new_directory(); ?>images/misc/about-image1.jpg" alt="image" class="img-responsive" />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="images/misc/about-image1.jpg" alt="image" class="img-responsive" />
                     </div>
-                    <div class="col-sm-8 hidden">
+                    <div class="col-sm-8">
                         <h3>Joe Doejuli</h3>
                         <h4>Manager</h4>
                         <ul class="list-unstyled list-inline sm-links">
@@ -93,21 +29,19 @@
                     </div>
                 </div>
                 <br />
-                <p class="hidden">
+                <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including  versions of Lorem Ipsum.
                 </p>
             </div>
             <!-- About Content Ends -->
-
-            <hr class="hidden" />
-
+            <hr />
             <!-- Testimonials Starts -->
-            <h2 class="sub-heading text-center hidden">
+            <h2 class="sub-heading text-center">
                 Testimonials
             </h2>
             <!-- Testimonial #1 Starts -->
-            <div class="media panel-smart hidden">
-                <img src="<?php get_template_new_directory(); ?>images/testimonial-images/image1.jpg" alt="image" class="img-responsive pull-left" />
+            <div class="media panel-smart">
+                <img src="images/testimonial-images/image1.jpg" alt="image" class="img-responsive pull-left" />
                 <div class="media-body">
                     <blockquote>
                         <p>
@@ -120,12 +54,41 @@
                 </div>
             </div>
             <!-- Testimonial #1 Ends -->
-
+            <!-- Testimonial #2 Starts -->
+            <div class="media panel-smart">
+                <img src="images/testimonial-images/image2.jpg" alt="image" class="img-responsive pull-left" />
+                <div class="media-body">
+                    <blockquote>
+                        <p>
+                            " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+                        </p>
+                        <footer>
+                            Lisa Whistler, <cite>Consultant</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- Testimonial #2 Ends -->
+            <!-- Testimonial #3 Starts -->
+            <div class="media panel-smart">
+                <img src="images/testimonial-images/image3.jpg" alt="image" class="img-responsive pull-left" />
+                <div class="media-body">
+                    <blockquote>
+                        <p>
+                            " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+                        </p>
+                        <footer>
+                            John Anderson, <cite>Designer</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- Testimonial #3 Ends -->
             <!-- Testimonials Ends -->
         </div>
         <!-- Primary Content Ends -->
         <!-- Sidebar Starts -->
-        <div class="col-md-3 widget">
+        <div class="col-md-3">
             <!-- Categories Links Starts -->
             <h3 class="side-heading">Categories</h3>
             <div class="list-group">
@@ -201,7 +164,7 @@
             <h3 class="side-heading">Bestsellers</h3>
             <div class="product-col">
                 <div class="image">
-                    <img src="<?php get_template_new_directory(); ?>images/product-images/pimg1.jpg" alt="product" class="img-responsive" />
+                    <img src="images/product-images/pimg1.jpg" alt="product" class="img-responsive" />
                 </div>
                 <div class="caption">
                     <h4>
@@ -234,6 +197,3 @@
     </div>
 </div>
 <!-- Main Container Ends -->
-
-
-

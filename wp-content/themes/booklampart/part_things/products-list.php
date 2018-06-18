@@ -27,7 +27,7 @@ $wpb_all_query = new WP_Query(['post_type' => 'post', 'post_status' => 'publish'
                         <div class="description">
                             <?php the_excerpt();?>
                         </div>
-                        <div class="price">
+                        <div class="price hidden">
                             <span class="price-new">$199.50</span>
                             <span class="price-old">$249.50</span>
                         </div>
@@ -35,13 +35,13 @@ $wpb_all_query = new WP_Query(['post_type' => 'post', 'post_status' => 'publish'
                             <button type="button" title="Wishlist" class="btn btn-wishlist">
                                 <i class="fa fa-heart"></i>
                             </button>
-                            <button type="button" title="Compare" class="btn btn-compare">
+                            <button type="button" title="Compare" class="btn btn-compare hidden">
                                 <i class="fa fa-bar-chart-o"></i>
                             </button>
-                            <button type="button" class="btn btn-cart">
-                                Add to cart
-                                <i class="fa fa-shopping-cart"></i>
-                            </button>
+                            <a href="<?php the_permalink(); ?>" type="button" class="btn btn-cart ">
+                                View
+                                <i class="fa fa-eye"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
