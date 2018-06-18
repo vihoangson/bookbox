@@ -32,3 +32,11 @@ div#wpbooklist-filter-search-container {
 header.entry-header {
     padding-top: 25px;
 }
+
+.image img {
+    width: 100%;
+    max-height: 220px;
+}
+
+main#main {
+}

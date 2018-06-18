@@ -1,5 +1,5 @@
 <div style="clear:both"></div>
-<div id="primary" class="content-area">
+<div id="primary" class="content-area hidden">
     <main id="main" class="site-main book-body" role="main">
 
         <?php
