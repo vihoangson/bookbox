@@ -229,10 +229,18 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse navbar-cat-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Trang chủ</a></li>
-                </ul>
+                <?php if ( has_nav_menu( 'mainmenu' ) ) : ?>
+                    <?php
+                    // mainmenu navigation menu.
+                    wp_nav_menu( array(
+                        'container'=>'none',
+                        'menu_class'     => 'nav navbar-nav',
+                        'theme_location' => 'mainmenu',
+                    ) );
+                    ?>
+                <?php endif ?>
             </div>
+
         </nav>
 
         <!-- Main Menu Starts -->

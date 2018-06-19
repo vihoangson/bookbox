@@ -18,7 +18,7 @@ $wpb_all_query = new WP_Query(['post_type' => 'post', 'post_status' => 'publish'
                         <!--
                         <img src="<?= get_template_new_directory() ?>images/product-images/1.jpg" alt="product" class="img-responsive" />
                         -->
-                        <?php the_post_thumbnail(); ?>
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                     </div>
                     <div class="caption">
                         <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
