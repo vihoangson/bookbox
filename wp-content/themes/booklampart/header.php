@@ -29,7 +29,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Spice Shoppe Stores - Bootstrap 3 Template</title>
+<!--    <title>Book box</title>-->
 
     <!-- Bootstrap Core CSS -->
     <link href="<?=get_template_new_directory()?>css/bootstrap.min.css" rel="stylesheet">

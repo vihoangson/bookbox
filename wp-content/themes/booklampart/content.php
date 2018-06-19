@@ -75,7 +75,12 @@
                         </footer><!-- .entry-footer -->
                         <?php //get_template_part('book'); ?>
                     </article><!-- #post-## -->
-
+                    <?php
+                    // If comments are open or we have at least one comment, load up the comment template.
+                    if ( comments_open() || get_comments_number() ) :
+                        comments_template();
+                    endif;
+                    ?>
                     <div class="col-sm-4 hidden">
                         <img src="<?php get_template_new_directory(); ?>images/misc/about-image1.jpg" alt="image" class="img-responsive" />
                     </div>

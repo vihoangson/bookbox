@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="login.html">
+                            <a href="/wp-admin">
                                 <i class="fa fa-lock" title="Login"></i>
                                 <span class="hidden-sm hidden-xs">
 												Login
@@ -113,13 +113,13 @@
                 <!-- Logo Starts -->
                 <div class="col-md-6">
                     <div id="logo">
-                        <a href="/"><img src="= get_template_new_directory() ?>images/logo.png" title="Spice Shoppe" alt="Spice Shoppe" class="img-responsive" /></a>
+                        <a href="/"><img src="<?= get_template_new_directory() ?>images/logo.png" title="Spice Shoppe" alt="Spice Shoppe" class="img-responsive" /></a>
                     </div>
                 </div>
                 <!-- Logo Starts -->
                 <!-- Search Starts -->
                 <div class="col-md-3">
-                    <div id="search">
+                    <div id="search" class="hidden">
                         <div class="input-group">
                             <input type="text" class="form-control input-lg" placeholder="Search">
                             <span class="input-group-btn">
@@ -133,7 +133,7 @@
                 <!-- Search Ends -->
                 <!-- Shopping Cart Starts -->
                 <div class="col-md-3">
-                    <div id="cart" class="btn-group btn-block">
+                    <div id="cart" class="btn-group btn-block hidden">
                         <button type="button" data-toggle="dropdown" class="btn btn-block btn-lg dropdown-toggle">
                             <i class="fa fa-shopping-cart"></i>
                             <span class="hidden-md">Cart:</span>
@@ -220,8 +220,23 @@
             </div>
         </div>
         <!-- Main Header Ends -->
-        <!-- Main Menu Starts -->
         <nav id="main-menu" class="navbar" role="navigation">
+            <!-- Nav Header Starts -->
+            <div class="navbar-header">
+                <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-cat-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-cat-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Trang chủ</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Menu Starts -->
+        <nav id="main-menu" class="navbar hidden" role="navigation">
             <!-- Nav Header Starts -->
             <div class="navbar-header">
                 <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-cat-collapse">
@@ -278,7 +293,7 @@
                             Pages
                         </a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>/">1Home</a></li>
+                            <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>/">Home</a></li>
                             <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>about.html">About</a></li>
                             <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>category-list.html">Category List</a></li>
                             <li><a tabindex="-1" href="<?= get_template_new_directory(); ?>category-grid.html">Category Grid</a></li>

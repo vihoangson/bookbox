@@ -1,12 +1,10 @@
 <?php
 $wpb_all_query = new WP_Query(['post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => -1,'post_format' => 'post-format-aside']); ?>
-
-
 <!-- Latest Products Starts -->
 <section class="products-list">
     <div class="">
         <!-- Heading Starts -->
-        <h2 class="product-head">Latest Products</h2>
+        <h2 class="product-head">Thông tin sách</h2>
         <!-- Heading Ends -->
         <!-- Products Row Starts -->
         <div class="row">

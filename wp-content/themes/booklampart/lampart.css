@@ -51,3 +51,8 @@ footer.entry-footer {
 time.updated {
     display: none;
 }
+
+form#commentform label,form#commentform input,form#commentform textarea{
+    display: block;
+    width: 100%;
+}

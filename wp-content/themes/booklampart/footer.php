@@ -138,5 +138,17 @@ if (is_home()) {
 <script src="<?=get_template_new_directory()?>js/bootstrap-hover-dropdown.min.js"></script>
 <script src="<?=get_template_new_directory()?>js/jquery.magnific-popup.min.js"></script>
 <script src="<?=get_template_new_directory()?>js/custom.js"></script>
+<script>
+function equalHeight(){
+    var $colClass = $('.product-col'), //class name of columns
+        heights = $colClass.map( function(){ //get height of all columns, pass it to an array (heights)
+            return $(this).height();
+        }).get();
+
+    $colClass.height( Math.max.apply(null, heights) );
+}
+
+equalHeight();
+</script>
 </body>
 </html>
